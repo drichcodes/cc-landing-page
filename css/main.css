@@ -1,0 +1,56 @@
+:root {
+    --clr-bg: #0f0e17;
+    --clr-main: #ff8906;
+    --clr-accent: #f25f4c;
+    --clr-btn: #e53170;
+    --clr-text-100: #fffffe;
+    --clr-text-400: #a7a9be;
+}
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-img {
+    width: 48px;
+    height: 48px;
+}
+
+#nav-bar {
+    width: 40%;
+}
+
+#nav-bar ul li {
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.form-container, #form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#email-label, #email, #submit {
+    margin: 3% 0;
+    padding: 10px 30px;
+    font-size: 1.25rem;
+}
