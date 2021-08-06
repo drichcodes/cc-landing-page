@@ -15,42 +15,160 @@
 
 html {
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background: var(--clr-text-400);
 }
 
-#header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+p {
+    font-size: 1.125rem;
 }
 
 #header-img {
-    width: 48px;
-    height: 48px;
+    width: 70px;
+    height: 70px;
 }
 
-#nav-bar {
-    width: 40%;
-}
-
-#nav-bar ul li {
-    display: inline-flex;
-    justify-content: space-between;
-    padding-left: 50px;
-}
-
-.form-container, #form {
+#heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-h2 {
-    font-size: 1.5rem;
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--clr-bg);
+    color: var(--clr-main);
 }
 
-#email-label, #email, #submit {
-    margin: 3% 0;
-    padding: 10px 30px;
+#header a {
+    color: var(--clr-main);
+    text-decoration: none;
     font-size: 1.25rem;
+}
+
+#nav-bar ul {
+    padding: 0;
+    text-align: center;
+}
+
+#nav-bar ul li {
+    display: inline;
+    padding: 20px;
+}
+
+/**** MAIN ****/
+.main {
+    margin-top: 50%;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form label, input {
+    padding: 10px 30px;
+    margin: 10px 30px;
+    font-size: 1.125rem;
+}
+
+/**** PRODUCTS ****/
+.content img {
+    width: 100px;
+    height: 100px;
+}
+
+/**** PRICING ****/
+.items {
+    border: 1px solid #ff8906;
+    margin: 10px;
+}
+
+.items .pricing-header {
+    background-color: var(--clr-main);
+    margin: 0;
+    padding: 10px;
+}
+
+.items button {
+    background: var(--clr-main);
+    padding: 10px 20px;
+    color: var(--clr-text-100);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/**** FOOTER ****/
+footer ul {
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    #header {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #heading {
+        flex-direction: row;
+        margin: 0 0 0 25px;
+    }
+
+    .main {
+        margin-top: 10%;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content p {
+        max-width: 60%;
+    }
+
+    .pricing {
+        display: flex;
+    }
+
+    .items {
+        width: 30%;
+        height: 250px;
+    }
+
+    .items p {
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .items button {
+        margin-top: 20px;
+    }
 }
