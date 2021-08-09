@@ -24,6 +24,10 @@ p {
     font-size: 1.125rem;
 }
 
+hr {
+    width: 100%;
+}
+
 #header-img {
     width: 70px;
     height: 70px;
@@ -39,6 +43,7 @@ p {
 #header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: var(--clr-bg);
     color: var(--clr-main);
@@ -64,6 +69,7 @@ p {
 .main {
     margin-top: 50%;
 }
+
 .main-content {
     display: flex;
     flex-direction: column;
